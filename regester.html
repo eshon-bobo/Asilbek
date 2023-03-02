@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regester</title>
+</head>
+<body>
+    <div style="margin: 0 250px;">
+        <h1>Regester</h1>
+    <form action=" " method="post">
+        <input type="text" name="firstName" placeholder="enter name"><br>
+        <input type="text" name="lastName" placeholder="enter lastName"><br>
+        <input type="text" name="username" placeholder="enter username"><br>
+        <input type="password" name="password" id="password" placeholder="enter password"><br>
+        <input type="password" name="prePassword" id="prePassword" placeholder="enter prePassword"><br>
+        <button type="button" id="regester" onclick="checkPassword()" style="color: royalblue">Regester</button>
+    </form>
+    </div>
+    <script type="text/javascript">
+        function checkPassword(){
+            let username = document.getElementById("password").value;
+            let password = document.getElementById("prePassword").value;
+            
+            
+            if(username.length === 0){
+                alert("login failed")
+            }
+            else if(username === password){
+                alert("login succesfuly");
+                return false;
+            }
+            
+        
+            else{
+                alert("login failed")
+            }
+           
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regester</title>
+</head>
+<body>
+    <h1>Succesfully saved user</h1>
+    </div>
+</body>
+</html>
